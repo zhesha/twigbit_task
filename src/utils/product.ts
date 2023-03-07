@@ -1,4 +1,4 @@
-import { Product, ProductsList } from "@/pages";
+import { Product, ProductsList } from "@/shared/Products";
 
 export function isProduct(obj: any): obj is Product {
   return (
