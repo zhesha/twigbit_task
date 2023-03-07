@@ -9,6 +9,8 @@ interface Product {
 
 // TODO get rid of `any` type
 export default function handler(req: any, res: any) {
-  product_mock.items.forEach((item: Product, index: number) => item.id = index);
+  product_mock.items.forEach(
+    (item: Product, index: number) => (item.id = index)
+  );
   res.status(200).json(product_mock);
 }
